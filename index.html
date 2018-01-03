@@ -2,9 +2,10 @@
 
 <html>
 <head>
-  <title>Simple Grid Layout</title>
+  <title>Polar Plunge</title>
   <link href="main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Lobster+Two" rel="stylesheet">
 </head>
 
 <body>
@@ -12,23 +13,106 @@
   <div class="container">
 
     <header>
-      This is the header area
+      <h1>Polar Plunge for Trash Free Seas</h1>
+      <span class="tagline">Make our Oceans Beautiful Again</span>
+      <img class="center"src="img/ocean-conservatory.png" alt="ocean conservatory logo">
     </header>
 
     <section id="about">
-      This is where I put info about the charity.
+      <h2 class="center"<h2>About Trash Free Seas</h2>
+      <p>The <a href="https://oceanconservancy.org/">Ocean Conservatory</a> focuses on a lot of things such as Trash Free Seas, Smart Ocean Planning, Sustainable Fisheries, Restoring the Gulf of Mexico, Ocean Climate, and Confronting Ocean Acidification. The topic I would like to focus on is Trash Free Seas. Trash in seas or oceans is a very big threat to wildlife as well as people. Wildlife mistakens the trash as food as well as the plastic in some trash contains pollutants that can significantly harm the wildlife. PLastic has been found in 59% of all sea birds, 100% of sea turtles, and 25% of fish. Every year about 8 million metric tons of plastic enters our oceans every year.</P>
+      <p>If nothing is done there could be a pound of plastic for every 3 pounds of fish caught. This plastic found in fish also has a way of entering our bodies as well. The fish that is caught to be sold could be sold to you with plastic in their systems, we then eat the fish and plastic is entered into our bodies. There is a way to change this, since 1985 Ocean Conservancy has collected 2228,919,809 pounds of trash and are still continuing to this day. Lets help make our oceans a beautiful place once again.</p>
+
     </section>
 
     <section id="event">
-      This is where I put info about the event.
+      <h2>Polar Plunge</h2>
+
+      <p>The event we will be hosting is a polar plunge. It will be held on the coast of Charleston, SC on January 2, 2018. It will be hosted at 1:00 and we will be jumping into the freezing water in order to raise funds for Trash Free Seas.</P>
+      <p> People will pay an initial fee of 30$ which includes the t-shirt the person will wear to the event and an initial donation of 15$ but guests will be encouraged to donate more. Guests will need to bring towels, blankets, and a change of clothes for after the event to warm up.</P>
+      <img class="right" src="img/polar.jpg" alt="People plunging in water">
+      <h2>Required Sign-up Information</h2>
+      <ul>
+        <li>Full Name</li>
+        <li>Email</li>
+        <li>Address (city, zip, and state)</li>
+        <li>Payment Information (card type and number)</li>
+        <li>T-shirt Information (size and quantity)
+      </ul>
     </section>
 
+
     <section id="signup">
-      This is where I put a signup form.
+    <h2 class="center"<h2>Sign-up</h2>
+      <form action="thanks.html" method="post">
+        <fieldset>
+          <legend>Shipping Information</legend>
+          <label for="name">Name:</label>
+          <input id="name" type="text" name="name"><br>
+
+          <label for="email">Email:</label>
+          <input id="email" type="text" email="email"><br>
+
+
+          <label for="Address">Address:</label>
+          <input id="Address"type="text" name="address"><br>
+
+
+          <label for="City">City:</label>
+          <input id="City" type="text" name="city"><br>
+
+
+          <label for="State">State:</label>
+          <input id="State" type="text" name="state" maxlength="2" size="2" ><br>
+
+
+          <label for="Zip">Zip:</label>
+          <input id="Zip" type="text" name="zip" maxlength="5" size="5"><br>
+        <br>
+      </fieldset>
+
+      <fieldset>
+          <legend>Order Information</legend>
+              <label for="size">Size:</label>
+              <select id="size"name="size">
+              <option value="Small">Small</option>
+              <option value="Medium">Medium</option>
+              <option value="Large">Large</option>
+              </select>
+
+
+              <label for="Quantity">Quantity:</label>
+              <input id="Quantity" type="text" name="Quantity" maxlength="3" size="3"><br>
+              <br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Payment Information</legend>
+            <input id="visa" type="radio" name="card_type" value="Visa">
+            <label for="visa">Visa</lable>
+
+            <input id="MC" type="radio" name="card_type" value="MC">
+            <label for="MC">Master Card</label>
+
+            <input id="disc" type="radio" name="card_type" value="disc">
+            <label for="disc">Discover</label><br>
+
+            <label for="Credit Card Number">Credit Card Number:</label>
+            <input id="Credit Card Number" type="text" name="Credit Card Number" maxlength="14" size="14">
+       </fieldset>
+
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+
+    <section id="hero">
+     <img class="hero" src="img/trash-free-seas.jpg" alt="Peope picking up trash">
     </section>
 
     <footer>
-      This is the footer area
+      <p>By: CinderElla</p>
+      <p>This event is fictacious and is only being used for a Web Page Design class not for anything else.</P>
     </footer>
 
   </div>

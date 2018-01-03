@@ -1,5 +1,13 @@
 body {
-  background-color: #dddddd;
+  background-color: #000000;
+  background-image: url("img/wave2.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #1FA7DF;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 div.container {
@@ -11,6 +19,7 @@ div.container {
     "about"
     "event"
     "signup"
+    "hero"
     "footer";
 
   margin-left: auto;
@@ -19,12 +28,18 @@ div.container {
 }
 
 header {
-  background-color: #99ffff;
+  background-color: #000000;
   grid-area: header;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 main {
 
+}
+
+img{
+  max-width: 100%;
 }
 
 section {
@@ -32,23 +47,74 @@ section {
 }
 
 section#about {
-  background-color: #9999ff;
+  background-color: #000000;
   grid-area: about;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 section#event {
-  background-color: #99ff99;
+  background-color: #000000;
   grid-area: event;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 section#signup {
-  background-color: #ff9999;
+  background-color: #000000;
   grid-area: signup;
+  padding: 20px;
+}
+
+section#hero{
+  grid-area:hero;
+  padding: 0;
 }
 
 footer {
-  background-color: #ffff99;
+  background-color: #000000;
   grid-area: footer;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h1 {
+  font-family: 'Lobster Two', cursive;
+  text-align: center;
+  font-size: 50px;
+  color: #FFFFFF;
+}
+
+.tagline {
+  display: block;
+  font-family: 'Lobster Two', cursive;
+  text-align: center;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+p {
+
+}
+
+h2.center{
+  text-align: center;
+}
+ img.center {
+   display: block;
+   margin: 0 auto;
+   margin-top: 10px;
+ }
+img.right {
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 @media (min-width: 800px) {
@@ -58,6 +124,26 @@ footer {
       "header header"
       "event event"
       "about signup"
+      "hero hero"
       "footer footer";
   }
+}
+/* unvisited link */
+a:link {
+  color: #bffffb;
+}
+
+/* visited link */
+a:visited {
+  color: #e5bfff;
+}
+
+/* mouse over link */
+a:hover {
+  color: #c6ffdc;
+}
+
+/* selected link */
+a:active {
+  color: #ffe0f6;
 }
