@@ -35,11 +35,6 @@ header {
 }
 
 main {
-
-}
-
-img{
-  max-width: 100%;
 }
 
 section {
@@ -66,9 +61,10 @@ section#signup {
   padding: 20px;
 }
 
-section#hero{
+section#hero {
   grid-area:hero;
   padding: 0;
+  display: none;
 }
 
 footer {
@@ -99,35 +95,29 @@ h2 {
   color: #FFFFFF;
 }
 
-p {
-
-}
-
-h2.center{
+h2.center {
   text-align: center;
 }
- img.center {
+
+p {
+}
+
+img{
+  max-width: 100%;
+}
+
+img.center {
    display: block;
    margin: 0 auto;
    margin-top: 10px;
- }
+}
+
 img.right {
     float: right;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-@media (min-width: 800px) {
-  div.container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "header header"
-      "event event"
-      "about signup"
-      "hero hero"
-      "footer footer";
-  }
-}
 /* unvisited link */
 a:link {
   color: #bffffb;
@@ -146,4 +136,23 @@ a:hover {
 /* selected link */
 a:active {
   color: #ffe0f6;
+}
+
+.pure-form legend {
+      color:#1FA7DF;
+}
+
+@media (min-width: 800px) {
+  div.container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "event event"
+      "about signup"
+      "hero hero"
+      "footer footer";
+  }
+  section#hero {
+    display: block;
+  }
 }

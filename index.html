@@ -3,9 +3,10 @@
 <html>
 <head>
   <title>Polar Plunge</title>
-  <link href="main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Lobster+Two" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+  <link href="main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,8 +30,10 @@
       <h2>Polar Plunge</h2>
 
       <p>The event we will be hosting is a polar plunge. It will be held on the coast of Charleston, SC on January 2, 2018. It will be hosted at 1:00 and we will be jumping into the freezing water in order to raise funds for Trash Free Seas.</P>
+
       <p> People will pay an initial fee of 30$ which includes the t-shirt the person will wear to the event and an initial donation of 15$ but guests will be encouraged to donate more. Guests will need to bring towels, blankets, and a change of clothes for after the event to warm up.</P>
       <img class="right" src="img/polar.jpg" alt="People plunging in water">
+
       <h2>Required Sign-up Information</h2>
       <ul>
         <li>Full Name</li>
@@ -43,63 +46,59 @@
 
 
     <section id="signup">
-    <h2 class="center"<h2>Sign-up</h2>
-      <form action="thanks.html" method="post">
-        <fieldset>
-          <legend>Shipping Information</legend>
-          <label for="name">Name:</label>
-          <input id="name" type="text" name="name"><br>
+      <h2 class="center">Sign-up</h2>
+        <form class="pure-form pure-form-stacked" action="thanks.html" method="post">
+          <fieldset>
+            <legend>Shipping Information</legend>
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name">
 
-          <label for="email">Email:</label>
-          <input id="email" type="text" email="email"><br>
+            <label for="email">Email:</label>
+            <input id="email" type="text" email="email">
 
+            <label for="Address">Address:</label>
+            <input id="Address"type="text" name="address">
 
-          <label for="Address">Address:</label>
-          <input id="Address"type="text" name="address"><br>
+            <label for="City">City:</label>
+            <input id="City" type="text" name="city">
 
+            <label for="State">State:</label>
+            <input id="State" type="text" name="state" maxlength="2" size="2" >
 
-          <label for="City">City:</label>
-          <input id="City" type="text" name="city"><br>
+            <label for="Zip">Zip:</label>
+            <input id="Zip" type="text" name="zip" maxlength="5" size="5">
+           <br>
+          </fieldset>
 
-
-          <label for="State">State:</label>
-          <input id="State" type="text" name="state" maxlength="2" size="2" ><br>
-
-
-          <label for="Zip">Zip:</label>
-          <input id="Zip" type="text" name="zip" maxlength="5" size="5"><br>
-        <br>
-      </fieldset>
-
-      <fieldset>
-          <legend>Order Information</legend>
+          <fieldset>
+            <legend>Order Information</legend>
               <label for="size">Size:</label>
               <select id="size"name="size">
               <option value="Small">Small</option>
               <option value="Medium">Medium</option>
               <option value="Large">Large</option>
               </select>
-
-
               <label for="Quantity">Quantity:</label>
-              <input id="Quantity" type="text" name="Quantity" maxlength="3" size="3"><br>
-              <br>
-      </fieldset>
+              <input id="Quantity" type="text" name="Quantity" maxlength="3" size="3">
+         </fieldset>
 
-      <fieldset>
-        <legend>Payment Information</legend>
-            <input id="visa" type="radio" name="card_type" value="Visa">
-            <label for="visa">Visa</lable>
+         <fieldset>
+          <legend>Payment Information</legend>
+            <label for="visa" class="pure-checkbox">
+              <input id="visa" type="radio" name="card_type" value="Visa"> Visa
+            </lable>
 
-            <input id="MC" type="radio" name="card_type" value="MC">
-            <label for="MC">Master Card</label>
+          <label for="MC" class="pure-checkbox">
+            <input id="MC" type="radio" name="card_type" value="MC"> Master Card
+          </label>
 
-            <input id="disc" type="radio" name="card_type" value="disc">
-            <label for="disc">Discover</label><br>
+          <label for="disc" class="pure-checkbox">
+            <input id="disc" type="radio" name="card_type" value="disc"> Discover
+          </label>
 
             <label for="Credit Card Number">Credit Card Number:</label>
             <input id="Credit Card Number" type="text" name="Credit Card Number" maxlength="14" size="14">
-       </fieldset>
+         </fieldset>
 
         <br>
         <input type="submit" value="Submit">
